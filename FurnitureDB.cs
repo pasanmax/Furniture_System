@@ -166,11 +166,11 @@ namespace Furniture_System
             SmtpServer.Timeout = 100000;
             SmtpServer.DeliveryMethod = SmtpDeliveryMethod.Network;
             SmtpServer.UseDefaultCredentials = false;
-            SmtpServer.Credentials = new NetworkCredential("testmailransilu@gmail.com", "pasana@123");
+            SmtpServer.Credentials = new NetworkCredential("yourgmail@gmail.com", "yourgmailpassword");
             SmtpServer.EnableSsl = true;
             MailMessage mail = new MailMessage();
-            mail.To.Add("testmailransilu@gmail.com");
-            mail.From = new MailAddress("testmailransilu@gmail.com");
+            mail.To.Add("sendergmail@gmail.com");
+            mail.From = new MailAddress("yourgmail@gmail.com");
 
             if (method == "NEW MEMBER REGISTRATION")
             {
